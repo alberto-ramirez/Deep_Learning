@@ -32,8 +32,8 @@ from sklearn.model_selection import learning_curve
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import RandomizedSearchCV
 
-df = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
-df1 = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\emisiones2.csv")
+df = pd.read_csv("precios_casas.csv")
+df1 = pd.read_csv("emisiones.csv")
 
 ## Regresion rigida
 rig = Ridge(alpha=10)
@@ -51,10 +51,6 @@ print('Coeficientes: ', modelo_rig.coef_)
 print('R2= {:.3f}'.format(modelo_rig.score(X_pru, y_pru)))
 
 reg = LinearRegression()
-# se obtienen las primeras 10 instancias
-##X = df[['sqft_living']].values[:10]
-##y = df['price'].values[:10]
-# se estandarizan las variables
 X_esc = sc_x.fit_transform(X)
 y_esc = sc_y.fit_transform(y[:, np.newaxis]).flatten()
 reg.fit(X_esc, y_esc)
@@ -62,10 +58,10 @@ print('w0: {:.3f}'.format(reg.intercept_))
 print('w1: {:.3f}'.format(reg.coef_[0]))
 
 # Graficas
-#plt.plot(rig.coef_, 'r-', label='Coeficientes Ridge')
-#plt.plot(reg.coef_, 'b*', label='Coeficientes OLS')
-#plt.xlabel('Coeficiente')
-#plt.show()
+plt.plot(rig.coef_, 'r-', label='Coeficientes Ridge')
+plt.plot(reg.coef_, 'b*', label='Coeficientes OLS')
+plt.xlabel('Coeficiente')
+plt.show()
 
 regCV = RidgeCV(alphas=[0.01, 0.1, 1.0, 10.0, 20.0, 50.0, 100.0])
 modelo_rigCV = regCV.fit(X,y)
@@ -83,7 +79,6 @@ modelo_Elastico = ElasticNet(alpha=0.1, l1_ratio=1)
 modelo_Elastico = lasso.fit(X_ent, y_ent)
 print('\nCoeficientes Elasticos: ', modelo_Elastico.coef_)
 print('R2 Lasso: {:.3f}'.format(modelo_lasso.score(X_pru, y_pru)))
-
 
 y_pred = reg.predict(X_pru)
 
