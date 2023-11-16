@@ -211,35 +211,3 @@ plt.xlabel('año')
 plt.xlim(1965, 2010)
 plt.ylabel('emision')
 plt.show()
-'''
-si no suelto tu pasado, es porque.. me das la impresión de que tu tampoco lo has hecho... no importa lo mucho que te repitas que tu no fuiste hecha para vivir en el pasado y la fregada no es cierto... son solo palabras.. toda tu actitud en este ultimo año me lo ha dejado claro, y hay dos cosas que no ves, 
-
-1. - no tienes idea lo mucho que me duele que sea asi
-2. - al fin pude entender la situación, y creeme no te culpo
-
-tu y aquel vivieron demasiadas cosas juntos, llamale como quieras, pero estuvieron casados 8 años, le diste un hijo hermoso,
-sigues viviendo con su familia, ese vato era el hombre de tu vida, no manches hasta hace unos meses me dolia entrar a tu face y ver sus pinches fotos esas de estado
-que no la quitas por ser macha segun.. ahorita ya no duele, apenas dejo de doler
-todo lo que vivieron juntos, tu y yo apenas llevamos 1 año  y a distancia, es normal que pongas tantos muros, pero a veces siento que ya no puedo son demasiados muros 
-a veces son muy altos 
-recuerdas la ultima vez que me mencionaste a elenita, que me enoje? yo estaba en el parque, queria decirte el porque me enoje de frente pero bueno quien sabe cuando sea 
-era algo sobre la popis, que ella te dijo que porque la justificabas, y tu le dijiste que no lo hacias, y yo te dije.. por que tu eres de los que piensan que es bueno tener a tus amigos cerca pero tener a tus enemigos mas cerca
-y me dijiste que si... bueno, cuando me dijiste.. es que elenita me dice que la justifico.. inmediatamente dije.. elenita tiene razon, es lo que haces
-siempre lo haces, siempre justificas a la gente, mas a las personas que te tratan mal.. por que? no estoy muy seguro, solo tengo hipotesis
-pero dije... esa cabrona de elenita te conoce bien, te lee, y si no te ayuda en algunas cosas es por que no quiere...no le veo otra razon
-por eso justificas al negro, apesar de que fue un completo hijo de puta contigo desde el dia 1
-siempre terminas dandole gusto a oscar... por X o Y razon ...
-bueno.. siempre le das gusto a elenita.. aunque eso te provoque un dolor de estomago! no manches, siempre hay una razon valida para darle gusto
-y el alberto? ahhh ese wey puede esperar... siempre puede esperar.. dice que me quiere no? yo se lo deje claro desde el comienzo y el dijo que si.. entonces.. que se espere
-
-por eso te dije que me sentia como tu amante.. porque... a pesar de que en algunas circunstancias nos favorecia que tu hablaras de mi para poder vernos... decidiste no hacerlo.. porque?
-por que los amantes no se presumen, son algo vergonzoso.. que debe permanecer oculto... sabes que es lo peor? que a los amantes los desean, le traen ganas, los quieren ver
-y yo ni eso provoco en ti
-
-si te preguntas porque quiero seguir contigo... es porque he decidido creer que todo esto que te digo es circunstancial, es por la depresion en la que estas, 
-por todos esos problemas que tienes ahorita , por la situacion tan complicada, quiero creer que esto es momentaneo, que realmente me quieres, pero las circunstancias no nos favorecen
-pero que si podremos salir juntos adelante, quiero tener fe 
-obviamente todo llegara a un punto de no retorno, pero ese momento no llega todavia 
-
-Data Scientist, Model dev background - Python3, Numpy/Pandas, Spark, SQL, SAS, matplot, scikit - m.ammu@tcs.com
-'''
