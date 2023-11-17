@@ -39,7 +39,6 @@ fin = time.time()
 ejecucion = (fin - inicio)
 print(f'Tiempo total de ejecucion del programa antes de mostrar las graficas: {ejecucion}')
 
-## Haciendo predicciones, casa con sqft_living = 10,000 -> Precio predicho: 7.794
 sqtf_living = sc_x.transform(np.array([[10000]]) )
 precio = reg.predict(sqtf_living)
 print('Precio predicho: %.3f' % precio)
