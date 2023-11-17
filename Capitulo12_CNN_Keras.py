@@ -86,7 +86,6 @@ print('Exactitud con regularizacion = {:.3f}'.format(puntuaciones_reg[1]) )
 print('Perdida con dropout = {:.3f}'.format(puntuaciones_drop[0]) )
 print('Exactitud con dropout = {:.3f}'.format(puntuaciones_drop[1]),'\n' )
 
-'''
 ## Graficando la perdida de entrenamiento y validacion
 history_dict = history.history
 loss_values  = history_dict['loss']
@@ -112,13 +111,3 @@ plt.xlabel('Epochs')
 plt.ylabel('Exactitud')
 plt.legend()
 plt.show()
-'''
-
-# Perdida = 0.278
-# Exactitud = 0.901
-
-# Perdida con regularizacion = 0.340
-# Exactitud con regularizacion = 0.895
-
-# Perdida con dropout = 0.293
-# Exactitud con dropout = 0.887
