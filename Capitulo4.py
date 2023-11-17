@@ -45,11 +45,10 @@ print('\nDataframe3 sin columnas innecesarias\n', df3)
 print('\nUsando el metodo dummies de pandas\n', pd.get_dummies(data=df2, columns=['Color'], drop_first=True) )
 
 ## Escalamiento de caracteristicas
-df4 = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df4 = pd.read_csv("precios_casas.csv")
 esc = MinMaxScaler()
 est = StandardScaler()
 X_ent = esc.fit_transform( df4.price.values.reshape(-1,1) )
 X_est = est.fit_transform( df4.price.values.reshape(-1,1) )
 print('\nMostrando valores normalizados:\n', X_ent)
 print('\nMostrando valores estandarizados:\n', X_est)
-
