@@ -58,7 +58,3 @@ pl.plot(X,Y3)
 pl.ylabel('Variable dependiente')
 pl.xlabel('Variable independiente')
 pl.show()
-
-
-#carolina rangel 
-#55-59-66-84-94
