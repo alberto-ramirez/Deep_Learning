@@ -47,7 +47,7 @@ sgd = optimizers.SGD(learning_rate=0.01)
 modelo.compile( loss='binary_crossentropy', optimizer='sgd', metrics=['accuracy'] )  # Funcion de costo: binary cross entropy
 
 ## Graficando con plot_model de keras
-#keras.utils.plot_model(modelo, show_shapes=True)
+keras.utils.plot_model(modelo, show_shapes=True)
 
 ## Entrenar la red
 historial = modelo.fit( X_ent, y_ent, epochs=1000, batch_size=64, validation_split=0.2 )
