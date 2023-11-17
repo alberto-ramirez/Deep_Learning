@@ -20,7 +20,7 @@ from sklearn.linear_model import LinearRegression
 reg = LinearRegression()
 
 ## Obtener las 10 primeras muestras
-df    = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df    = pd.read_csv("precios_casas.csv")
 X     = df[['sqft_living']].values[:10]
 y     = df['price'].values[:10]
 epoch = 100
@@ -43,8 +43,3 @@ print(f'Tiempo total de ejecucion del programa antes de mostrar las graficas: {e
 sqtf_living = sc_x.transform(np.array([[10000]]) )
 precio = reg.predict(sqtf_living)
 print('Precio predicho: %.3f' % precio)
-
-#Tiempo total de ejecucion del programa antes de mostrar las graficas: 2.2704732418060303, en la primera ejecucion
-#El valor de w0 es: 0.000
-#El valor de w1 es: 0.737
-
