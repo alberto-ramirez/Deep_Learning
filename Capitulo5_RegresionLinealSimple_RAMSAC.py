@@ -8,7 +8,6 @@
 ## Date: October 19th, 2023
 ##==============================================================================
 
-from cProfile import label
 import time
 inicio = time.time()
 
@@ -22,18 +21,17 @@ from sklearn.linear_model import RANSACRegressor
 reg = LinearRegression()
 
 ## Obtener las 10 primeras muestras
-df    = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df    = pd.read_csv("precios_casas.csv")
 X     = df[ ['sqft_living'] ].values[:10]
 y     = df['price'].values[:10]
-
 
 ## Estandarizar los valores de los vectores X, y
 sc_x = StandardScaler()
 sc_y = StandardScaler()
 X_esc = sc_x.fit_transform(X)
 y_esc = sc_y.fit_transform( y[:, np.newaxis] ).flatten()
-
 reg.fit(X_esc,y_esc)
+
 ## Ajustar el model con datos de entrenamiento
 ransanc = RANSACRegressor(reg)
 ransanc.fit(X_esc, y_esc)
@@ -60,7 +58,3 @@ fin = time.time()
 ejecucion = (fin - inicio)
 print(f'Tiempo total de ejecucion del programa antes de mostrar las graficas: {ejecucion}')
 plt.show()
-
-#El valor de w0 es: -0.422
-#El valor de w1 es: [0.15225054]
-#Tiempo total de ejecucion del programa antes de mostrar las graficas: 2.020704507827759
