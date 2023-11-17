@@ -15,7 +15,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 
-df    = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df    = pd.read_csv("precios_casas.csv")
 X     = df.iloc[0:10,3].values
 y     = df.iloc[0:10,1].values
 mms_x = MinMaxScaler()
@@ -44,5 +44,3 @@ fin = time.time()
 ejecucion = (fin - inicio)
 print(f'Tiempo total de ejecucion del programa antes de mostrar las graficas: {ejecucion}')
 plt.show()
-
-### En la primera ejecucion exitosa -> Tiempo total de ejecucion del programa antes de mostrar las graficas: 2.2080483436584473
