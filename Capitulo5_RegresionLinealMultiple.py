@@ -21,7 +21,7 @@ from sklearn.model_selection import train_test_split
 reg = LinearRegression()
 
 ## Obtener las 10 primeras muestras
-df    = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df    = pd.read_csv("precios_casas.csv")
 X     = df[ ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot'] ].values
 y     = df['price'].values
 
@@ -44,8 +44,3 @@ print(f'Tiempo total de ejecucion del programa antes de mostrar las graficas: {e
 
 ## Calculando exactitud del modelo
 print('Exactitud: {:.3f}'.format(reg.score(X_pru, y_pru)))
-
-#Intercepcion: 0.009
-#Coeficientes:  [-0.09001078  0.00709681  0.49100858 -0.05325143]
-#Tiempo total de ejecucion del programa antes de mostrar las graficas: 1.9104938507080078
-#Exactitud: 0.428
