@@ -17,14 +17,10 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 
 ## Obtener las 10 primeras muestras
-df    = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df    = pd.read_csv("precios_casas.csv")
 X     = df[['sqft_living']].values[:10]
 y     = df['price'].values[:10]
 epoch = 100
-
-#print('el valor de X\n', X)
-#print('\nel valor de y\n', y)
-#print('\nel valor de y[:, np.newaxis]\n', y[:,np.newaxis])
 
 ## Estandarizar los valores de los vectores X, y
 sc_x = StandardScaler()
@@ -82,5 +78,3 @@ fin = time.time()
 ejecucion = (fin - inicio)
 print(f'Tiempo total de ejecucion del programa antes de mostrar las graficas: {ejecucion}')
 plt.show()
-# Tiempo total de ejecucion del programa antes de mostrar las graficas: 1.5038015842437744
-# El valor de w0 es : 0.013, El valor de w1 es : 0.706
