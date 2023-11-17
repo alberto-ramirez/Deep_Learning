@@ -8,8 +8,6 @@
 ## Date: October 20th, 2023
 ##==============================================================================
 
-
-from cProfile import label
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as pl
@@ -17,7 +15,7 @@ from scipy.optimize import curve_fit
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
-df = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\datos_suscripciones.csv")
+df = pd.read_csv("datos_suscripciones.csv")
 #print(df.sample(7))
 pl.scatter( df['año'], df['cantidad'], color='r' )
 pl.xlabel('Año')
