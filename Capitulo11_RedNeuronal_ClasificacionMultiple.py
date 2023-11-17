@@ -34,13 +34,13 @@ print('Dimensiones del arreglo y de prueba: ',str(y_pru.shape),'\n')
 columnas = ['Blusa', 'Pantalon', 'Chaqueta', 'Vestido', 'Saco', 'Sandalia', 'Sueter', 'Zapatilla', 'Bolso', 'Bota']
 #plt.figure( figsize=(12,8) )
 
-#for i in range(15):
-#    plt.subplot(3,5,i+1)
-#    plt.imshow(X_ent[i])
-#    plt.title( columnas[ y_ent[i] ] )
-#    plt.axis('off')
+for i in range(15):
+    plt.subplot(3,5,i+1)
+    plt.imshow(X_ent[i])
+    plt.title( columnas[ y_ent[i] ] )
+    plt.axis('off')
 
-#plt.show()
+plt.show()
 
 ## Preprocesado
 X_ent = X_ent.astype('float32')
