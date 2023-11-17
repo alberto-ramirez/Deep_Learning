@@ -20,7 +20,7 @@ from sklearn.linear_model import SGDRegressor
 sgd_reg = SGDRegressor(max_iter=1000, tol=1e-3, eta0=0.001, random_state=1)
 
 ## Obtener las 10 primeras muestras
-df    = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df    = pd.read_csv("precios_casas.csv")
 X     = df[['sqft_living']].values[:10]
 y     = df['price'].values[:10]
 
@@ -33,18 +33,3 @@ print('El valor de w1 es: {}'.format(w1))
 fin = time.time()
 ejecucion = (fin - inicio)
 print(f'Tiempo total de ejecucion del programa antes de mostrar las graficas: {ejecucion}')
-
-
-## ======================================================= sin SDG
-#Tiempo total de ejecucion del programa antes de mostrar las graficas: 2.2704732418060303, en la primera ejecucion
-#El valor de w0 es: 0.000
-#El valor de w1 es: 0.737
-## ==================================================================================================================
-#El valor de w0 es: [-2.54084659e+08]
-#El valor de w1 es: [3.23536513e+11]
-#Tiempo total de ejecucion del programa antes de mostrar las graficas: 1.5704107284545898 -> con 100 iteraciones
-
-## ================================================================================================================== con mil iteraciones
-## El valor de w0 es: [-2.54084659e+08]
-## El valor de w1 es: [3.23536513e+11]
-## Tiempo total de ejecucion del programa antes de mostrar las graficas: 1.7200253009796143
