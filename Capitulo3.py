@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("C:\\Users\\alber\\Documents\\Progra\\Deep_Learning\\aprendizaje_automatico_y_profundo\\fuentes\\casas\\precios_casas.csv")
+df = pd.read_csv("precios_casas.csv")
 
 print('Mostrando el contenido del data frame:\n',df)
 print('\nUsando la funcion head', df.head())
